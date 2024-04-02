@@ -1,0 +1,7 @@
+gtts
+pydub
+requests
+pillow==9.5.0
+edge-tts
+nltk
+moviepy==1.0.3

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>文件夹展示</title>
+    <style>
+        /* 添加粗竖线分割 */
+        li {
+            display: flex; /* 居左显示 */
+            align-items: center; /* 居上显示 */
+            padding: 10px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+
+        div + div {
+            border-left: 10px solid #ccc; /* 添加粗竖线分割 */
+            padding-left: 20px; /* 调整分割线和内容之间的距离 */
+        }
+
+        /* 新增样式，使按钮和文字在同一行 */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button-container button {
+            /* 设置按钮样式，包括右对齐 */
+            text-align: center;
+            width: 150px;
+            height: 40px;
+        }
+    </style>
+
+    <script>
+        function redirectAndAlert(deffer) {
+            // 使用 window.location.href 实现页面重定向
+            window.location.href = deffer; // 替换为你的目标网页URL
+        }
+        function refreshPage(id) {
+            $.ajax({
+                url: '/re_make_picer/'+id,
+                type: 'GET',
+                success: function(data) {
+                    if (data === 'Success') {
+                        // 刷新页面的逻辑，可以使用location.reload()等
+                        location.reload();
+                    }
+                }
+            });
+        }
+        // 在页面加载后，每5秒刷新一次页面
+        window.onload = function() {
+            setInterval(function() {
+                location.reload();
+            }, 10000); // 5000毫秒 = 5秒
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>图片文件夹</h1>
+    <span class="button-container">
+        <button onclick="redirectAndAlert('/delete_folder_fileser')">删除所有</button>
+        <button onclick="redirectAndAlert('/make_texter')">生成文</button>
+        <button onclick="redirectAndAlert('/make_ttser')">生成音</button>
+        <button onclick="redirectAndAlert('/make_picer')">生成图</button>
+        <button onclick="redirectAndAlert('/make_movieer')">生成视频</button>
+        <button onclick="redirectAndAlert('/open_floder_picer')">打开图片文件夹</button>
+        <button onclick="redirectAndAlert('/open_file_contenter')">添加文本内容</button>
+        <button onclick="redirectAndAlert('/open_floder_videoer')">打开视频文件夹</button>
+    </span>
+    <ul>
+        {% if split_txt_files_cont != 0 %}
+            {% for i in range(1, split_txt_files_cont+1) %}
+            <li class="button-container">
+                <img src="{{ url_for('static', filename='pictures/image' ~ i ~ '.png')}}" alt="Image {{ i }}" width="200">
+                <div>
+                    <p>{{ i }}</p>
+                    <p>{{ text_contents[i-1] }}</p>
+                </div>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                
+                <button onclick="refreshPage('{{i}}')" style="margin-left: auto;">重构图片</button>
+            </li>
+            {% endfor %}
+        {% else %}
+            <h1>所有内容为空</h1>
+        {% endif %}
+    </ul>
+</body>
+</html>
