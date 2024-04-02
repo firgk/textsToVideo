@@ -1,13 +1,14 @@
 # textsToVideo
 
 
-https://www.bilibili.com/video/BV1Au4y1W7qz/
+[演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
 
 
 ## 小说推文生成神器
 
 
 [演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+
 使用stable diffusion api生成图片,结合python的一系列对媒体操作的库,生成十分简单的小说推文.
 
 **喜欢的话请给我一个star**
@@ -68,17 +69,17 @@ Generate images using the stable diffusion API, combined with a series of media 
 
 ## Project Introduction
 
--This project involves the use of various technologies and tools, including:
--Natural Language Processing (NLP): Using techniques such as regular expressions and word segmentation to process and segment text, as well as using the NLTK library for part of speech tagging and stop word filtering.
--Text segmentation: Using regular expressions and segmentation symbols to segment long text into short paragraphs for easier subsequent processing.
--Speech synthesis: Using tools such as gTTS (Google Text to Speech) and edge ts to convert text content into speech files. In edge tts, subprocess is also used to call external commands for speech synthesis.
--Image processing: Use libraries such as PIL (Python Imaging Library) and Moviepy to convert text content into images for subsequent video generation.
--Video generation: Using the Moviepy library to synthesize voice files and images into videos, generating video content based on text content.
--Content translation: Use Baidu Translate API to translate text content, achieving the translation function from Chinese text to English text.
--Keyword extraction: Use TF-IDF algorithm to extract keywords from text, helping to understand the theme and content of the text.
--File operation: Use libraries such as OS and SHUTIL to operate files, including functions such as creating folders and deleting files.
--Network request: Use the requests library for HTTP requests, interact with external services for data, such as using Baidu Translate API for text translation.
--The comprehensive application of these technologies and tools has achieved the function of converting text into various multimedia content, enriched the expression forms of text content, and improved the user experience.
+- This project involves the use of various technologies and tools, including:
+- Natural Language Processing (NLP): Using techniques such as regular expressions and word segmentation to process and segment text, as well as using the NLTK library for part of speech tagging and stop word filtering.
+- Text segmentation: Using regular expressions and segmentation symbols to segment long text into short paragraphs for easier subsequent processing.
+- Speech synthesis: Using tools such as gTTS (Google Text to Speech) and edge ts to convert text content into speech files. In edge tts, subprocess is also used to call external commands for speech synthesis.
+- Image processing: Use libraries such as PIL (Python Imaging Library) and Moviepy to convert text content into images for subsequent video generation.
+- Video generation: Using the Moviepy library to synthesize voice files and images into videos, generating video content based on text content.
+- Content translation: Use Baidu Translate API to translate text content, achieving the translation function from Chinese text to English text.
+- Keyword extraction: Use TF-IDF algorithm to extract keywords from text, helping to understand the theme and content of the text.
+- File operation: Use libraries such as OS and SHUTIL to operate files, including functions such as creating folders and deleting files.
+- Network request: Use the requests library for HTTP requests, interact with external services for data, such as using Baidu Translate API for text translation.
+- The comprehensive application of these technologies and tools has achieved the function of converting text into various multimedia content, enriched the expression forms of text content, and improved the user experience.
 
 
 
