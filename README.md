@@ -42,7 +42,7 @@
 ## 使用教程
 
 1. 安装 python 3.7+
-2. 安装依赖`pip install -r requirement.txt`
+2. 安装依赖`pip install -r requirements.txt`
 3. 安装[Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838)
 	需要指定Imagemagick的路径,博客链接中已经给出
 4. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api`
@@ -93,7 +93,7 @@ Generate images using the stable diffusion API, combined with a series of media 
 ## User Guide
 
 1. Install Python 3.7+
-2. Install Dependencies ` pip install - r requirement. txt`
+2. Install Dependencies ` pip install - r requirements. txt`
 3. Install [Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838)
 	The path to Imagemagick needs to be specified, as already provided in the blog link
 4. Configure the 'stablediffusion apis': specify the' Stable_diff apis' in 'deffer. py'`
