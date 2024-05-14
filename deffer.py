@@ -10,7 +10,10 @@ import base64
 import random
 import string
 import time
+from config import *
 from gtts import gTTS
+# 配置IMAGEMAGICK_BINARY环境变量
+os.environ["IMAGEMAGICK_BINARY"] =x
 from moviepy.editor import *
 from pydub import AudioSegment
 from PIL import Image
@@ -26,7 +29,6 @@ from nltk.tokenize import word_tokenize
 # nltk.download('stopwords')
 # nltk.download('averaged_perceptron_tagger')
 from moviepy.editor import ImageClip, VideoFileClip
-from config import *
 
 
 

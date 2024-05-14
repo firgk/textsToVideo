@@ -5,3 +5,5 @@ pillow==9.5.0
 edge-tts
 nltk
 moviepy==1.0.3
+flask==3.0.3
+scikit-learn==1.4.2

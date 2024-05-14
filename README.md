@@ -43,11 +43,11 @@
 
 1. 安装 python 3.7+
 2. 安装依赖`pip install -r requirements.txt`
-3. 安装[Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838)
-	需要指定Imagemagick的路径,博客链接中已经给出
-4. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api`
-5. 点击`start.bat`运行
-6. 参考视频使用教程 [演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+3. 安装[Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838).
+4. 安装`stablediffusion`
+5. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api`,和`Imagemagick`的路径.
+6. 点击`start.bat`运行
+7. 参考视频使用教程 [演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
 
 > 如果缺某些库,请自行安装
 
