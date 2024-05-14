@@ -172,8 +172,8 @@ def _edge_tts(first,second,content):
     # tts.save(filename)
     filename = 'tts/'+str(first)+"."+str(second)+'.mp3'
     cmd = 'edge-tts --voice zh-CN-YunxiNeural --text "' + content + '" --write-media %s' % filename
-    res = subprocess.call(cmd, shell=True)
-
+    subprocess.call(cmd, shell=True)
+    # tts/1.1.mp3
     sound = AudioSegment.from_mp3(filename)
     duration = int(sound.duration_seconds)
     update_name = '%s.%s_duration_%f.mp3' % (filename.split('.')[0],filename.split('.')[1], duration)

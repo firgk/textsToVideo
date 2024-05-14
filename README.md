@@ -57,6 +57,7 @@
 
 为了方便大家调试,代码中使用的是我本人的百度翻译api,后期可能失效
 
+stable diff webui 启动参数 `python launch.py --skip-torch-cuda-test --nowebui --listen` (因人而异)
 
 
 
@@ -95,10 +96,10 @@ Generate images using the stable diffusion API, combined with a series of media 
 1. Install Python 3.7+
 2. Install Dependencies ` pip install - r requirements. txt`
 3. Install [Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838)
-	The path to Imagemagick needs to be specified, as already provided in the blog link
-4. Configure the 'stablediffusion apis': specify the' Stable_diff apis' in 'deffer. py'`
-5. Click on 'start. bat' to run
-6. Reference video tutorial [demonstration video](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+4. install `stablediffusion`
+5. Configure the 'stablediffusion apis': specify the' Stable_diff apis' in 'deffer. py' and `Imagemagick` 
+6. Click on 'start. bat' to run
+7. Reference video tutorial [demonstration video](https://www.bilibili.com/video/BV1Au4y1W7qz/)
 
 > If some libraries are missing, please install them yourself
 
@@ -108,3 +109,9 @@ Generate images using the stable diffusion API, combined with a series of media 
 
 For the convenience of debugging, I am using my own Baidu Translate API in the code, which may become invalid in the future
 
+
+
+# deffer 中是定义的所有函数
+# config 是所有的配置
+# main.py 是启动的函数
+# app.py 是Controller
