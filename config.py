@@ -1,29 +1,17 @@
-
-import os
 Stable_diff_api="http://192.168.101.13:7861"
-
-# 此处可以添加额外的配置
+import os
+# os.environ["IMAGEMAGICK_BINARY"] = r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
 Stable_diff_conf={
-    # 支持payload中的参数直接写入,会改变生成图片的效果如:
-    #   "enable_hr": false,
-    #   "denoising_strength": 0,
-    #   "firstphase_width": 0,
+    
 }
 
-# 配置ImageMagick的路径
-x= r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
-
-
-
-# 此处用于给生成每张图片的时候都添加的修饰关键字,比如"4K 高清 柔和......"
-# 例子:
-# ADDER_PROMOTE="柔和, 古风"
 
 ADDER_PROMOTE=""
 
-
-
 # 数组从1开始
+
+
+
 # payload = {
 #   "enable_hr": false,
 #   "denoising_strength": 0,

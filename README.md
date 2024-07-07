@@ -2,23 +2,17 @@
 
 ![展示](./展示.png)
 
-![展示](./展示2.png)
 
-[演示视频](https://www.bilibili.com/video/BV1Vt4y1f7o4/)
-
-[使用演示](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+[演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
 
 
 ## 小说推文生成神器
 
 
-
-
-[使用演示](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+[演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
 使用stable diffusion api生成图片,结合python的一系列对媒体操作的库,生成十分简单的小说推文.
 
 **喜欢的话请给我一个star**
-
 
 
 
@@ -39,17 +33,31 @@
 
 
 
-## 使用教程
 
-1. 安装 python 3.7+
-2. 安装依赖`pip install -r requirements.txt`
-3. 安装[Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838).
-4. 安装`stablediffusion`
-5. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api`,和`Imagemagick`的路径.
-6. 点击`start.bat`运行
-7. 参考视频使用教程 [演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+## 使用教程( windows10 )
 
-> 如果缺某些库,请自行安装
+### 虚拟环境(简单)
+1. 克隆整个项目
+2. 安装 python Python 3.7.9
+3. 安装[Imagemagick] 并且添加到环境变量
+> 参考:
+> (https://blog.csdn.net/popboy29/article/details/135587838) (https://zhuanlan.zhihu.com/p/687794898)
+4. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api` 和 Imagemagick的路径
+5. 双击 `start_virtual.bat`
+
+
+
+### 本地环境(不建议)
+1. 安装 python Python 3.7.9
+2. 安装依赖`pip install -r requirements.txt` 
+3. 安装[Imagemagick] 并且添加到环境变量
+> 参考:
+> (https://blog.csdn.net/popboy29/article/details/135587838) (https://zhuanlan.zhihu.com/p/687794898)
+4. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api` 和 Imagemagick的路径
+5. 点击`start.bat`运行
+
+
+
 
 
 
@@ -57,14 +65,14 @@
 
 为了方便大家调试,代码中使用的是我本人的百度翻译api,后期可能失效
 
-stable diff webui 启动参数 `python launch.py --skip-torch-cuda-test --nowebui --listen` (因人而异)
+为了方便环境配置以及减少问题, **内置**了`ffmpeg.exe ffplay.exe ffprobe.exe 虚拟环境的缓存` 所以整个项目会比较大
 
 
 
 
+# English Version
 
 ## Novel tweet generation artifact
-
 
 [Demo Video](https://www.bilibili.com/video/BV1Au4y1W7qz/)
 Generate images using the stable diffusion API, combined with a series of media operation libraries in Python, to generate very simple novel tweets
@@ -93,15 +101,14 @@ Generate images using the stable diffusion API, combined with a series of media 
 
 ## User Guide
 
-1. Install Python 3.7+
-2. Install Dependencies ` pip install - r requirements. txt`
-3. Install [Imagemagick](https://blog.csdn.net/popboy29/article/details/135587838)
-4. install `stablediffusion`
-5. Configure the 'stablediffusion apis': specify the' Stable_diff apis' in 'deffer. py' and `Imagemagick` 
-6. Click on 'start. bat' to run
-7. Reference video tutorial [demonstration video](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+1. Install Python 3.7.9
+2. Install Dependencies `pip install -r requirements.txt`
+3. Install [Imagemagick] and add it to the environment variable
+> 参考:
+> ( https://blog.csdn.net/popboy29/article/details/135587838 ) ( https://zhuanlan.zhihu.com/p/687794898 )
+4. Configure the `stablediffusion api` : specify the `Stable_diff_api` in `deffer.py`
+5. Click on `start.bat` to run
 
-> If some libraries are missing, please install them yourself
 
 
 
@@ -109,9 +116,3 @@ Generate images using the stable diffusion API, combined with a series of media 
 
 For the convenience of debugging, I am using my own Baidu Translate API in the code, which may become invalid in the future
 
-
-
-# deffer 中是定义的所有函数
-# config 是所有的配置
-# main.py 是启动的函数
-# app.py 是Controller
