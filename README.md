@@ -36,25 +36,16 @@
 
 ## 使用教程( windows10 )
 
-### 虚拟环境(简单)
-1. 克隆整个项目
-2. 安装 python Python 3.7.9
-3. 安装[Imagemagick] 并且添加到环境变量
-> 参考:
-> (https://blog.csdn.net/popboy29/article/details/135587838) (https://zhuanlan.zhihu.com/p/687794898)
-4. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api` 和 Imagemagick的路径
-5. 双击 `start_virtual.bat`
-
-
-
-### 本地环境(不建议)
 1. 安装 python Python 3.7.9
 2. 安装依赖`pip install -r requirements.txt` 
 3. 安装[Imagemagick] 并且添加到环境变量
 > 参考:
 > (https://blog.csdn.net/popboy29/article/details/135587838) (https://zhuanlan.zhihu.com/p/687794898)
-4. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api` 和 Imagemagick的路径
-5. 点击`start.bat`运行
+4. 在这个网站 https://github.com/BtbN/FFmpeg-Builds/releases?page=3
+下载 Auto-Build 2023-09-30 的 ffmpeg-N-112236-g2cb2465cc7-win64-gpl.zip
+解压之后 将`bin`目录下的三个 `exe` 文件拷贝到本项目的根目录
+5. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api` 
+6. 点击`start.bat`运行
 
 
 
