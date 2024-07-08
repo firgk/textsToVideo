@@ -1,6 +1,7 @@
 # textsToVideo
 
-![展示](./展示.png)
+![展示](./show.png)
+![展示](./show2.png)
 
 
 [演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
