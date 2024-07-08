@@ -4,13 +4,13 @@
 ![展示](./show2.png)
 
 
-[演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
-
+[演示视频](https://www.bilibili.com/video/BV1Jj411e7XK/)
 
 ## 小说推文生成神器
 
 
-[演示视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+[使用视频](https://www.bilibili.com/video/BV1Au4y1W7qz/)
+
 使用stable diffusion api生成图片,结合python的一系列对媒体操作的库,生成十分简单的小说推文.
 
 **喜欢的话请给我一个star**
