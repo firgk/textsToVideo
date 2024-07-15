@@ -45,7 +45,7 @@
 4. 在这个网站 https://github.com/BtbN/FFmpeg-Builds/releases?page=3
 下载 Auto-Build 2023-09-30 的 ffmpeg-N-112236-g2cb2465cc7-win64-gpl.zip
 解压之后 将`bin`目录下的三个 `exe` 文件拷贝到本项目的根目录
-5. 配置`stablediffusion api` : 在`deffer.py`中的指定`Stable_diff_api` 
+5. 配置`stablediffusion api` : 在`deffer.py`中的指定`stable_diff_api` , 演示中使用的是 2023年10月份的 搭建的`stable_diff`
 6. 点击`start.bat`运行
 
 
